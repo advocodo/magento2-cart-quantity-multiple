@@ -1,0 +1,20 @@
+<?php
+/**
+ * Cart Quantity Multiple warning message
+ */
+/**
+ * @var \Advocodo\CartQuantityMultiple\Block\Checkout\Cart\WarningMessage $block
+ * @var \Magento\Framework\Escaper $escaper
+ */
+?>
+<?php if ($block->getDisplayPermanentWarningMessage()): ?>
+<div class="page messages">
+    <div>
+        <div class="messages">
+            <div class="message-info info message">
+                <div><?= $escaper->escapeHtml($block->getPermanentWarningMessage()) ?></div>
+            </div>
+        </div>
+    </div>
+</div>
+<?php endif; ?>

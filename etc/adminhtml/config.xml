@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <sales>
+            <cart_quantity_multiple>
+                <enable>0</enable>
+                <multiplier>6</multiplier>
+                <excluded_categories></excluded_categories>
+                <display_permanent_warning_message>0</display_permanent_warning_message>
+                <permanent_warning_message>It's better to ordering in multiples of %.</permanent_warning_message>
+                <block_ordering>1</block_ordering>
+                <error_message>You can only order in multiples of %. Please check your cart before you checkout.</error_message>
+            </cart_quantity_multiple>
+        </sales>
+    </default>
+    <stores>
+        <fr_fr>
+            <sales>
+                <cart_quantity_multiple>
+                    <permanent_warning_message>Il est préférable de commander en multiples de %.</permanent_warning_message>
+                    <error_message>Vous ne pouvez commander que des multiples de %. Vérifiez votre panier avant de passer commande.</error_message>
+                </cart_quantity_multiple>
+            </sales>
+        </fr_fr>
+    </stores>
+</config>
